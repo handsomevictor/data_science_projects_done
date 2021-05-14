@@ -1,4 +1,5 @@
 This is a real-time, everyday-updated stock performance analyzer, stocke recommendation adviser with beautiful interactive interfaces.
+（BTW it's a inclass big homework based project, if there are anything wrong with the codes or the package I am using, please contact me)
 
 Before all, in order to make the files running smoothly, you need to download the packages in the 'requirements.txt' file by using the command: 
 "pip install -r requirements.txt" in the file location in command.
