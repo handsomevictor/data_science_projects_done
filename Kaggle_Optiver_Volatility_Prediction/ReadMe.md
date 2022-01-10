@@ -1,5 +1,5 @@
-This is the jupyter notebook we did for the Optiver Volatility Prediction competition on September 2021.
+This is the notebook we did for the Optiver Volatility Prediction competition on September 2021.
 
-Our unofficial ranking is 39/3852 (as of Nov. 1st) and it's within silver medal group currently. This ranking is not final, becuase a 3 months' real market forecasting is required, and the final result will be revealed in 2022 January.
+Our final ranking is 94/3852 after a 3 months' real market forecasting period.
 
 Feel free to copy any code you want, there is no copyright on this.
