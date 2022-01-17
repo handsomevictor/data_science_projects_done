@@ -2,7 +2,7 @@ This file contains a report and a notebook. This is the homework for the course 
 
 We didn't have a very good ranking in this Kaggle Competition :(
 
-The link to the in-class competition is: https://www.kaggle.com/c/fdl21-fdl-dsba/submissions?sortBy=publicScore&page=1&pageSize=100
+The link to the in-class competition is: https://www.kaggle.com/c/fdl21-fdl-dsba/overview
 
 The codes here in the notebook is rather "novice".
 
