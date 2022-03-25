@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0042)https://www.lri.fr/~gcharpia/deeppractice/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<meta name="description" content="Deep Learning in Practice" lang="en">
+
+<meta name="keywords" content="Guillaume, Charpiat,neural,network,deep,learning" lang="en">
+
+<meta http-equiv="Content-Language" content="fr">
+
+
+<title>Deep Learning in Practice</title>
+<style data-emotion="css"></style></head>
+<body bgcolor="#E6E6FF" text="black">
+  
+<br>
+<h1><font color="#993333">Deep Learning in Practice</font></h1>
+
+MVA Master, January-March 2022<br>
+<br>
+
+<hr>
+<strong>News : </strong> <em>(reload for fresher news...)</em><br>
+- <u>First sessions will be <strong>online</strong></u><br>
+- <u>Registration open</u>: click <a href="https://www.lri.fr/~gcharpia/deeppractice/registration/names.html">here!</a><br>
+- <u>First course</u>: Thursday 13th of January, 9h<br>
+<!--
+- Link to hand in <a href="depot/index_TD6.html">TD6</a> added (same password as previously)<br>
+<!-- - Register to the <a href="#ml">mailing-list</a>! as the link to the course online will be given there<br> -->
+<!-- - The course will take place <a href="#online">online</a> via Microsoft Teams<br> -->
+<!-- - Last year course (Jan.-March 2020) is available <a href="index_2020.html">there.</a><br> -->
+<!-- - <u>Comments welcomed!</u> about this class <a href="depot/index_comments.html">here</a><br> -->
+<hr>
+<br>
+
+<em>The previous course (January-March 2021) can be found <a href="https://www.lri.fr/~gcharpia/deeppractice/index_2021.html">there</a>; the new course will follow more or less the same lines, though not exactly.<br>
+The webpage for the new course (2022) is not completely finished; materials from last year and not updated yet are preceded by "<span style="color:red">[2021]</span>".<br></em><br>
+General information about the course: <a href="https://www.lri.fr/~gcharpia/deeppractice/2022/presentation_cours_MVA_2022.pdf">presentation slides</a> <br>
+
+<br>
+To attend the course, please <strong>register <a href="https://www.lri.fr/~gcharpia/deeppractice/registration/names.html">here</a> first.</strong>
+NB: Auditors (auditeurs libres) are welcome; just subscribe as well.<br>
+<br>
+<strong>Requirements :</strong> having already followed a course about neural networks (this is an <em>advanced</em> deep learning course).<br>
+Typical mathematical notions used: differential calculus, Bayesian statistics, analysis, information theory.
+<br>
+<br>
+<strong>Teaching team :</strong>
+<ul>
+  <li> Most lectures: Guillaume Charpiat
+  </li><li> Practical sessions: Wenzhuo Liu, Matthieu Nastorg and Manon Verbockhaven (incl. materials by Victor Berger, Alessandro Bucci and Loris Felardos)
+</li></ul>
+
+<!--
+<strong id="ml">Mailing-list :</strong>
+all announcements (last-minute changes, rooms, projects, etc.) will be made on a dedicated mailing-list; to subscribe, visit this link: 
+<code>https://sympa.inria.fr/sympa/info/deep_learning_in_practice_2021</code>
+and click on <code>subscribe / s'abonner</code>, or replace <code>/info/</code> with <code>/subscribe/</code> in the URL.
+Make sure that you do receive an confirmation email; if not, try subscribing with another email address, or <a href="../index_en.html">contact me</a>.<br><br>
+Auditors (auditeurs libres) are welcome; just subscribe to the mailing-list as well.<br>
+<br>
+
+<strong id="online">Location : </strong> online. The course will take place via Microsoft Teams. You can either install the client on your computer (available for Windows/Mac/Linux; this way provides more features), or follow the course via a browser (in which case, better use Chrome). The link to attend the course will be given on the mailing-list above. Do not hesitate to register, even at the last minute.
+-->
+<!-- <em>(If the covid crisis ends: at CentraleSupelec, bus stop "Moulon" + 7 minute walk to the <a href="https://www.openstreetmap.org/directions?engine=fossgis_osrm_foot&route=48.71179%2C2.16648%3B48.70894%2C2.16394#map=17/48.70974/2.16615">Breguet building</a>. Common transportation planification: <a href="https://www.vianavigo.com/itineraire?arrival=56%3A11889%7CStopArea%7CMoulon%7C91190%7CGif-sur-Yvette%7C587466%7C2412614&carpoolOperators=1%7C2%7C3%7C4%7C6%7C7%7C34&date=2020-01-13T08%3A50&departure=%7CFreeSel%7C%7C%7C%7C%7C&journeyProfil=00&preferences=111111%7C11&sens=-1">vianavigo</a>.)</em>
+-->
+<br>
+<!--
+In a nutshell:<br>
+<table border="1" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Chapter</th> <th> Title </td> <th> Summary </th> <th>Notes</th> <th>Videos</th> <th>Exercises</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td> <td>Deep learning vs. classical ML and optimization</td> <td><a href="2020/chap_1.html">html</a></td> <td><a href="2021/chap_1.pdf">pdf</a></td> <td><a href="2021/recordings/chap1_part1.mkv">1</a>, <a href="2021/recordings/chap1_part2.mkv">2</a></td> <td><a href="2021/TP1/">Hyperparameter and training basics</a></td>
+    </tr>
+    <tr>
+      <td>2</td> <td>Interpretability</td> <td><a href="2020/chap_2.html">html</a></td> <td><a href="2021/session2_interpretability.pdf">pdf</a></td> <td><a href="2021/recordings/chap2_part1.mkv">1</a>,   <a href="2021/recordings/chap2_teams_part2.mp4">2</a>,   <a href="2021/recordings/chap2_teams_part3.mp4">3</a></td> <td><a href="2021/TP2.zip">Visualization with grad-CAM</a></td> 
+    </tr>
+    <tr>
+      <td>3</td> <td>Architectures</td> <td><a href="2020/chap_3.html">html</a></td> <td><a href="2021/session3.pdf">pdf</a></td> <td><a href="2021/recordings/chap3.mkv">1</a></td> <td>Graph-NN: <a href="2021/TP3/train_ppi_baseline.py">code</a> and <a href="2021/TP3/GraphNN_TP_Instructions.pdf">instructions</a></td> 
+    </tr>
+    <tr>
+      <td>4</td> <td>Small data: weak supervision, transfer, and incorporation of priors</td> <td><a href="2020/chap_4.html">1</a> + <a href="chap_7.html">2</a></td> <td><a href="2021/session4_smalldata.pdf">pdf</a></td> <td><a href="2021/recordings/chap4.mkv">1</a></td> <td>Transfer learning: <a href="2021/TP4/TP4_instructions.pdf">instructions</a> and <a href="2021/TP4/TP4_transfer.ipynb">jupyter notebook</a></td> 
+    </tr>
+    <tr>
+      <td>*</td> <td colspan="3">Presentation of Therapixel, start-up in medical imaging, by Yaroslav Nikulin<br>Evolutionary Deep Computer Vision, by Olivier Teytaud (Facebook FAIR Paris)</td> <td colspan="2"><a href="2021/Therapixel/">slides+video</a><br> <a href="2021/recordings/Olivier_Teytaud_evovision.pdf">slides</a> + videos: <a href="2021/recordings/Olivier_Teytaud_part1.mp4">1</a>, <a href="2021/recordings/Olivier_Teytaud_part2.mp4">2</a> </td>
+    </tr>
+    <tr>
+      <td>5</td> <td>Deep learning for physics, with Lionel Mathelin (LIMSI, Paris-Sud) and Michele Alessandro Bucci (LRI, TAU team)</td> <td><a href="chap_7.html#B5">(html)</a></td> <td><a href="2021/chap_5_Lionel_Mathelin_slides.pdf">slides</a></td> <td><a href="2021/recordings/chap_5_part1_Lionel_Mathelin.mp4">1</a>, <a href="2021/recordings/chap_5_part3_Guillaume_Charpiat_.mp4">2</a></td> <td><a href="2021/TP5/">Learning dynamical systems</a>, with <a href="2021/recordings/chap_5_part2_TP_Alessandro_Bucci.mp4">presentation</a></td> 
+    </tr>
+    <tr>
+      <td>6</td> <td>Modeling tasks and losses<br> + Generative models (GAN, VAE and Normalizing Flows)</td> <td><a href="https://www.lri.fr/~gcharpia/deeppractice/chap_7.html#B">html</a><br>-</td> <td><a href="2021/chap_6_notes.pdf">pdf</a></td> <td><a href="2021/recordings/chap_6_part1.mkv">1</a><br> <a href="2021/recordings/chap_6_part2.mkv">2</a>, <a href="2021/recordings/chap_6_TD_and_complements.mp4">TP+3</a> </td> <td><br><a href="2021/TP6/">Generative models</a></td> 
+    </tr>
+    <tr>
+      <td>7</td> <td>Guarantees? Generalization and formal proofs<br> + Auto-ML / Auto-DeepLearning, by Lisheng Sun (Isabelle Guyon's group, LRI, Paris-Sud)</td> <td><a href="https://www.lri.fr/~gcharpia/deeppractice/2020/chap_4.html#C">(html)</a><br>-</td> <td><a href="2021/chap_7_notes.pdf">pdf</a><br><a href="2021/AutoML/AutoML.pdf">slides</a></td> <td><a href="2021/recordings/chap_7_lesson.mkv">1</a><br><a href="2021/recordings/chap_7_automl.mp4">2</a></td> <td><a href=""></a></td> 
+    </tr>
+
+  </tbody>
+</table>
+<br>
+--> 
+
+
+<br>
+<strong>Schedule :</strong> January-March 2022, on (most) Thursday mornings, 9h - 12h15 (3 hours with a 15 minute break), <strong>online</strong> in covidian times (and hopefully later at CentraleSupelec) [register to get the link]:<br><br>
+<!--, amphi Janet (also named room E2.19, in the Breguet building):<br><br>-->
+<em>(The program below is indicative and subject to changes.)</em>
+
+<ul>
+  <li><u>January 13th</u> : <em>Deep learning vs. classical machine learning and optimization</em><br>
+    <strong>→</strong> Practical session: hyperparameters and training basics: <a href="https://www.lri.fr/~gcharpia/deeppractice/2022/TP1/tp1.pdf">instructions</a> and the 2 problems of TP1: <a href="https://www.lri.fr/~gcharpia/deeppractice/2022/TP1/TP1_Pb1_Multiclass.ipynb">Pb 1</a>, and <a href="https://www.lri.fr/~gcharpia/deeppractice/2022/TP1/TP1_Pb2_Regression.ipynb">Pb 2</a> with its <a href="https://www.lri.fr/~gcharpia/deeppractice/2022/TP1/house_prices.csv">dataset</a> <br>
+<!--  <strong>&rarr;</strong> <a href="depot/index_TD1.html">Link</a> to hand in TD1 (password communicated on the mailing-list)<br> -->
+    <strong>→</strong> <a href="https://www.lri.fr/~gcharpia/deeppractice/environment.html">Environment</a> used in practical sessions<br>
+<!--    <strong>&rarr;</strong> Practical session: <a href="2020/TP1/tp1.pdf">topic</a> and notebooks for <a href="2020/TP1/TP1_Ex1_Binary_classification.ipynb">Exercise 1</a>, <a href="2020/TP1/TP1_Ex2_Multiclass.ipynb">Exercise 2</a>, <a href="2020/TP1/TP1_Ex3_MultiTask.ipynb">Exercise 3</a> and <a href="2020/TP1/TP1_Ex4_Regression.ipynb">Exercise 4</a> with its <a href="2020/TP1/FR_wind_predict_2016.csv">dataset</a>; submit full report (for all exercises together) <a href="depot/">here</a> (password communicated on mailing-list).<br>  -->
+    <strong>→</strong> <a href="https://www.lri.fr/~gcharpia/deeppractice/2020/tips.pdf">Practical tips and tricks</a> to train neural networks<br>
+    <strong>→</strong> <span style="color:green">[2022]</span> <a href="https://www.lri.fr/~gcharpia/deeppractice/2022/DLiP2022_chap_1_part1.pdf">Course notes (pdf)</a> /  <span style="color:red">[2021]</span> <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/chap_1.pdf">Course notes (pdf)</a> (handwritten with drawings) and <a href="https://www.lri.fr/~gcharpia/deeppractice/2020/chap_1.html">lesson summary</a> (html)<br>
+    <strong>→</strong> Video recording: <a href="https://www.lri.fr/~gcharpia/deeppractice/2022/recordings/chap1_2022_.mkv">lecture</a> [270MB], <a href="https://www.lri.fr/~gcharpia/deeppractice/2022/recordings/TP1_2022.mp4">TP presentation</a> [130MB]<br>
+    <br>
+  </li><li><u>January 20th</u> : <em>Interpretability</em><br>
+    <strong>→</strong> Practical session: visualization with grad-CAM:
+<!-- <a href="2021/TP2.zip">grad-CAM (including all side files) [73MB]</a> <br> -->
+    <a href="https://www.lri.fr/~gcharpia/deeppractice/2022/TP2/TP2_GradCAM.ipynb">notebook</a> and <a href="https://www.lri.fr/~gcharpia/deeppractice/2022/TP2/TP2_images.zip">test images</a><br>
+<!--, and <a href="depot/index_TP2.html">submission site</a> (same password)<br> -->
+<!--    <strong>&rarr;</strong> <a href="depot/index_TD2.html">Link</a> to hand in TD2 (same password as previously)<br> -->
+    <strong>→</strong> <span style="color:red">[2021]</span> <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/session2_interpretability.pdf">Course notes (pdf)</a> (handwritten with drawings) and <a href="https://www.lri.fr/~gcharpia/deeppractice/2020/chap_2.html">lesson summary</a> (html)<br>
+<!--    <strong>&rarr;</strong> Video recording: <a href="2021/recordings/chap2_part1.mkv">part 1</a> [200MB],   <a href="2021/recordings/chap2_teams_part2.mp4">part 2</a> [200MB],   <a href="2021/recordings/chap2_teams_part3.mp4">part 3</a> [230MB],   <a href="2021/recordings/chap2_teams_TD.mp4">TD presentation</a> [170MB] <br> -->
+    <br>
+  </li><li><u>January 27th</u> : <em>Architectures</em><br>
+    <strong>→</strong> Practical session on graph-NN <br>
+<!--: <a href="2021/TP3/train_ppi_baseline.py">code</a> and <a href="2021/TP3/GraphNN_TP_Instructions.pdf">instructions</a>; <a href="depot/index_TD3.html">submission site</a> (same password) <br>  -->
+    <strong>→</strong> <span style="color:red">[2021]</span> <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/session3.pdf">Course notes (pdf)</a> (handwritten with drawings) and <a href="https://www.lri.fr/~gcharpia/deeppractice/2020/chap_3.html">lesson summary</a><br>
+<!--    <strong>&rarr;</strong> Video recording: <a href="2021/recordings/chap3.mkv">full lecture</a> [350MB] and <a href="2021/recordings/chap3_teams_TD.mp4">TD presentation</a> [115MB] <br> -->
+    <br>
+  </li><li><u>February 3rd</u> : <em>Small data: weak supervision, transfer, and incorporation of priors</em><br>
+    <strong>→</strong> Practical session on transfer learning <br>
+<!-- : <a href="2021/TP4/TP4_instructions.pdf">instructions</a> and <a href="2021/TP4/TP4_transfer.ipynb">jupyter notebook</a>;  <a href="depot/index_TD4.html">submission site</a><br>
+    <strong>&rarr;</strong> Video recording: <a href="2021/recordings/chap4.mkv">full lecture</a> [280MB] and <a href="2021/recordings/chap4_teams_TD.mp4">TD4 presentation</a> [100MB] <br> -->
+    <strong>→</strong> <span style="color:red">[2021]</span> <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/session4_smalldata.pdf">Course notes (pdf)</a> (handwritten with drawings)<br>
+    <strong>→</strong> <span style="color:red">[2021]</span> Lesson summary: <a href="https://www.lri.fr/~gcharpia/deeppractice/2020/chap_4.html">part 1</a>, <a href="https://www.lri.fr/~gcharpia/deeppractice/chap_7.html">part 2</a><br>
+    <br>
+  </li><li><u>February 10th and 17th</u> : no course! <br>
+     <br>
+  </li><li><u>February 24th</u> : <em>Guest talk + guest course</em> (to be confirmed)<br>
+    <strong>→</strong> <span style="color:red">[2021]</span> <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/Therapixel/">presentation</a> of Therapixel, a start-up in medical imaging, by Yaroslav Nikulin<br>
+    <strong>→</strong> <span style="color:red">[2021]</span> guest course by Olivier Teytaud (Facebook FAIR Paris) about Evolutionary Deep Computer Vision:  <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/recordings/Olivier_Teytaud_evovision.pdf">slides</a> <br>
+<!-- + video recordings: <a href="2021/recordings/Olivier_Teytaud_part1.mp4">part 1</a> [300MB], <a href="2021/recordings/Olivier_Teytaud_part2.mp4">part 2</a> [500MB] <br> -->
+<!-- (Deep Reinforcement Learning + a healthcare start-up presentation) <br> -->
+<!-- <em>Deep Reinforcement Learning</em>, guest talk by Olivier Teytaud (Facebook FAIR Paris), + guest talk by Yaroslav Nikulin (Therapixel)<br>
+    <strong>&rarr;</strong> Slides by Olivier Teytaud: <a href="https://www.slideshare.net/teytaud/evolutionary-deep-learning-computer-vision">Evolutionary computer vision</a>, <a href="https://www.slideshare.net/teytaud/nevergrad-our-platform-for-evolutionary-and-derivative-free-optimization">Nevergrad</a>, <a href="https://www.slideshare.net/teytaud/alphazero-and-beyond-polygames">Polygames</a> <br>
+    <strong>&rarr;</strong> Yaroslav Nikulin's <a href="2020/tpx_for_mva_dl_course_2020.pdf">slides</a><br> -->
+    <br>
+  </li><li><u>March 3rd</u> : <em>Modeling: deep learning and physics (exploiting known invariances, priors or physical properties)</em>, with Michele Alessandro Bucci (LRI, TAU team) and Lionel Mathelin (LIMSI, Paris-Sud)<br>
+<!--    <strong>&rarr;</strong> <a href="2020/TP5/TP5.zip">Practical session</a> on deep learning for physics (due by March 12th);  <a href="depot/index_TP5.html">submission site</a><br>
+    <strong>&rarr;</strong> Lionel Mathelin's slides available on request<br> -->
+<!--    <strong>&rarr;</strong> Practical session on learning dynamical systems <br> -->
+    <strong>→</strong> <span style="color:red">[2021]</span> Lionel Mathelin's <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/chap_5_Lionel_Mathelin_slides.pdf">slides</a> <br>
+<!-- and <a href="2021/recordings/chap_5_part1_Lionel_Mathelin.mp4">video recording</a> [420MB]<br> -->
+    <strong>→</strong> Practical session on learning dynamical systems<br>
+<!--    <strong>&rarr;</strong> <a href="2021/TP5/">Practical session</a> on learning dynamical systems, with its dedicated <a href="depot/index_TD5.html">submission site</a>, and Alessandro Bucci's <a href="2021/recordings/chap_5_part2_TP_Alessandro_Bucci.mp4">presentation</a> [200MB] <br> -->
+<!--    <strong>&rarr;</strong> Further on this topic: <a href="2021/recordings/chap_5_part3_Guillaume_Charpiat_.mp4">video recording</a> [220MB] and -->
+    <strong>→</strong> <span style="color:red">[2021]</span> Further on this topic:  <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/chap_5_notes.pdf">associated notes</a> and on a similart topic: <a href="https://www.lri.fr/~gcharpia/deeppractice/chap_7.html#B5">notes</a><br>
+    <br>
+  </li><li><u>March 10th</u> : <em>Generative models</em> (GAN, VAE and Normalizing Flows) + <em>Modeling tasks and losses</em><br> 
+<!--    <strong>&rarr;</strong> Zhengying Liu's <a href="2020/Zhengying_AutoDL_course.pdf">talk</a> <br> -->
+    <strong>→</strong> Practical session on generative models <br> <!-- <a href="2021/TP6/">generative models</a> ; <a href="depot/index_TD6.html">submission site</a> <br> 
+    <strong>&rarr;</strong> Video recordings: <a href="2021/recordings/chap_6_part1.mkv">part 1</a> [170MB], <a href="2021/recordings/chap_6_part2.mkv">part 2</a> [130MB], <a href="2021/recordings/chap_6_TD_and_complements.mp4">TP presentation + course complements</a> [300MB], and -->
+    <strong>→</strong> <span style="color:red">[2021]</span> <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/chap_6_notes.pdf">Notes</a> (pdf) + lesson summary about <a href="https://www.lri.fr/~gcharpia/deeppractice/chap_7.html#B">modeling tasks and losses</a><br>
+    <br>
+  </li><li><u>March 17th</u> : <em>Guarantees?</em> Generalization and formal proofs + <em>Auto-ML / Auto-DeepLearning</em> (guest talk by Lisheng Sun, from Isabelle Guyon's group)<br>
+    <strong>→</strong> <span style="color:red">[2021]</span> Lesson about guarantees/robustness: <!-- <a href="2021/recordings/chap_7_lesson.mkv">video recording</a> [230MB] -->
+<!-- , <a href="2021/recordings/chap_6_part2.mkv">part 2</a> [130MB], <a href="2021/recordings/chap_6_TD_and_complements.mp4">TP presentation + course complements</a> [300MB], -->
+    <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/chap_7_notes.pdf">associated notes</a> (pdf) <br>
+    <strong>→</strong> <span style="color:red">[2021]</span> Lesson summary about <a href="https://www.lri.fr/~gcharpia/deeppractice/2020/chap_4.html#C">learning from noisy data</a><br>
+    <strong>→</strong> <span style="color:red">[2021]</span>  Lisheng Sun's talk: <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/AutoML/AutoML.pdf">AutoML slides</a> <!-- and <a href="2021/recordings/chap_7_automl.mp4">video recording</a> [180MB] --> + more details about <a href="https://www.lri.fr/~gcharpia/deeppractice/2021/AutoML/LectureHPO_OPT7.pdf">Bayesian optimization for hyper-parameters</a> <br>
+</li></ul>
+<br>
+
+<br><br>
+<strong>Ressources</strong>: <a href="https://www.lri.fr/~gcharpia/deeppractice/ressources.html">links</a> to introduction to python, numpy, classical machine learning + online deep learning courses
+
+
+<br><br><br>
+<strong>Internship offers :</strong><ul>
+  <li>ours:
+    <ul>
+      <li><a href="https://www.lri.fr/~gcharpia/Deep_learning_for_population_genetics__interpretability_and_generators.pdf">Deep learning for population genetics (interpretability and DNA generators)</a>
+      </li><li><a href="https://www.lri.fr/~gcharpia/internship_sampling_conformations.pdf">Sampling 3D Molecular Distributions with Deep Neural Networks</a>
+      </li><li><a href="https://www.lri.fr/~gcharpia/deeppractice/stages/Active_machinelearning.pdf">Deep Active Modeling for Physics</a>
+      </li><li><a href="https://www.lri.fr/~gcharpia/LRI_IFPEN-CFD_IA.pdf">Deep Learning for Fluid Mechanics</a>
+    </li></ul>
+  </li><li>more from the <a href="https://tao.lri.fr/tiki-index.php?page=Stages">TAU team</a> (deep for population  genetics, AutoML, etc.)
+<!--
+  <li>and from beyond: <ul>
+      <li><a href="Deep_learning_MRIrecon_FastMRI_multichannel.pdf">Deep learning for Magnetic Resonance Image Reconstruction in the Multichannel Acquisition Setting</a>
+      <li> <a href="../Stage_M2_AutoML.pdf">AutoML and interpretability</a> and <a href="../Stage_M2_RS.pdf">recommendation and bias</a>
+    </ul>
+-->
+</li></ul>
+
+
+
+<br><br>
+
+<br><br>
+<br><br>
+<a href="https://www.lri.fr/~gcharpia/index_en.html">Back to the main page</a>
+<script type="text/javascript">
+document.write("<img src=\"https://www.normalesup.org/~charpiat/1pixel.png?ref="+encodeURIComponent(document.referrer)+"\" alt=\"pixel\">");
+</script><img src="./Deep Learning in Practice_files/1pixel.png" alt="pixel">
+<noscript>
+<img src="https://www.normalesup.org/~charpiat/1pixel.png" alt="pixel">
+</noscript>
+
+<br>
+<br>
+<p>
+    <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.lri.fr%2F~gcharpia%2Findex.html"><img src="./Deep Learning in Practice_files/valid-html40" alt="Valid HTML 4.0 Transitional" height="31" width="88"></a>
+ </p>
+<br>
+
+  
+ 
+  
+<div id="d8dabd40-d903-45d9-9505-d43d5c2975b6-quickmenu"></div></body></html>
