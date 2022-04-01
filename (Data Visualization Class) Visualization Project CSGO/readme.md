@@ -8,6 +8,7 @@ How to use:
 
 - Download the file
 - CD this directory
+- pip install streamlit
 - Input: streamlit run dashboard.py
 - Then you will see a local website is opened. Do whatever you want.
 
