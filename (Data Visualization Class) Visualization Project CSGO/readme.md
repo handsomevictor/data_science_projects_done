@@ -4,4 +4,13 @@ Used streamlit and atlair to build website and interactive graphs.
 
 Course professor website: https://tobias.isenberg.cc/visualization/Assignments/Assignment4
 
+How to use:
+
+- Download the file
+- CD this directory
+- Input: streamlit run dashboard.py
+- Then you will see a local website is opened. Do whatever you want.
+
+By the way, streamlit was created for machine learning interactions, if I have time I will do another project and use this tool to visualize everything, like trees, nodes, clustering etc.
+
 No copyright, do whatever you want.
