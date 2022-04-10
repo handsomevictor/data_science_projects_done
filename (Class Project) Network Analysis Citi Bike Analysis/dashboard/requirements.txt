@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+streamlit
+matplotlib
+decorator==5.0.9
+altair
+networkx
+nx_altair
